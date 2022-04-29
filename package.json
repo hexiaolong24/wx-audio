@@ -1,0 +1,82 @@
+{
+  "name": "wx-audio",
+  "version": "0.0.0",
+  "description": "微信小程序音频播放器audio",
+  "keywords": [
+    "audio",
+    "wx",
+    "taro",
+    "mini-program"
+  ],
+  "scripts": {
+    "build:weapp": "taro build NODE_ENV=production --type weapp",
+    "build-dev:weapp": "taro build --env development NODE_ENV=development --type weapp",
+    "build:swan": "taro build --type swan",
+    "build:alipay": "taro build --type alipay",
+    "build:tt": "taro build --type tt",
+    "build:h5": "taro build --type h5",
+    "build:rn": "taro build --type rn",
+    "build:qq": "taro build --type qq",
+    "build:quickapp": "taro build --type quickapp",
+    "dev:weapp": "npm run build:weapp NODE_ENV=development -- --watch",
+    "pro:weapp": "npm run build:weapp NODE_ENV=production -- --watch",
+    "dev:swan": "npm run build:swan -- --watch",
+    "dev:alipay": "npm run build:alipay -- --watch",
+    "dev:tt": "npm run build:tt -- --watch",
+    "dev:h5": "npm run build:h5 -- --watch",
+    "dev:rn": "npm run build:rn -- --watch",
+    "dev:qq": "npm run build:qq -- --watch",
+    "dev:quickapp": "npm run build:quickapp -- --watch",
+    "lint:eslint": "eslint --cache --max-warnings 0  \"src/**/*.{ts,vue}\" --fix",
+    "lint": "lint-staged"
+  },
+  "lint-staged": {
+    "src/**/*.{ts,vue}": [
+      "eslint --cache --max-warnings 0  \"src/**/*.{ts,vue}\" --fix --max-warnings=200"
+    ]
+  },
+  "browserslist": [
+    "last 3 versions",
+    "Android >= 4.1",
+    "ios >= 8"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@babel/runtime": "^7.7.7",
+    "@tarojs/components": "3.4.3",
+    "@tarojs/plugin-framework-react": "^3.4.8",
+    "@tarojs/plugin-framework-vue3": "^3.4.3",
+    "@tarojs/runtime": "3.4.3",
+    "@tarojs/taro": "3.4.3",
+    "pinia": "^2.0.11",
+    "vue": "3.2.31"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.8.0",
+    "@tarojs/mini-runner": "3.4.3",
+    "@tarojs/webpack-runner": "^3.4.4",
+    "@types/webpack-env": "^1.13.6",
+    "@typescript-eslint/eslint-plugin": "^2.x",
+    "@typescript-eslint/parser": "^2.x",
+    "@vue/compiler-sfc": "3.2.31",
+    "@vue/eslint-config-prettier": "^7.0.0",
+    "babel-preset-taro": "3.4.3",
+    "case": "^1.6.3",
+    "eslint": "^6.8.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-config-taro": "3.4.3",
+    "eslint-plugin-prettier": "^3.1.4",
+    "eslint-plugin-vue": "^7.0.0",
+    "file-save": "^0.2.0",
+    "husky": "^7.0.4",
+    "lint-staged": "^12.3.5",
+    "miniprogram-api-typings": "^3.4.5",
+    "prettier": "^2.6.2",
+    "stylelint": "9.3.0",
+    "taro-plugin-pinia": "^1.0.0",
+    "typescript": "^3.7.0",
+    "vue-loader": "17.0.0",
+    "webpack-bundle-analyzer": "^4.5.0"
+  }
+}

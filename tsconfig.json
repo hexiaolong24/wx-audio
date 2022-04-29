@@ -1,0 +1,32 @@
+{
+  "compilerOptions": {
+    "target": "es2017",
+    "module": "commonjs",
+    "removeComments": false,
+    "preserveConstEnums": true,
+    "moduleResolution": "node",
+    "experimentalDecorators": true,
+    "noImplicitAny": false,
+    "allowSyntheticDefaultImports": true,
+    "outDir": "lib",
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "strictNullChecks": true,
+    "sourceMap": true,
+    "baseUrl": ".",
+    "types": ["miniprogram-api-typings"],
+    "lib": ["ES6", "DOM", "ES2016", "ES2017", "ES2018","ES2019","ES2021","ESNext"],
+    // 为了防止第三方库带来的不确定性 https://www.codenong.com/52311779/
+    "skipLibCheck": true,
+    "rootDir": ".",
+    "jsx": "react",
+    "allowJs": true,
+    "resolveJsonModule": true,
+    "typeRoots": ["node_modules/@types", "global.d.ts"],
+    "paths": {
+      "@/*": ["./src/*"]
+    }
+  },
+  "exclude": ["node_modules", "dist"],
+  "compileOnSave": false
+}
